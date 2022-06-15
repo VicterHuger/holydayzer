@@ -17,7 +17,7 @@ const holidays = [
 ];
 
 function todayHoliday(){
-    const today = new Date();
+    const today = new Date().toLocaleDateString('en-us');
     return holidays.filter(day=>day.date===today);
 }
 
